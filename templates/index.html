@@ -3,6 +3,20 @@
 <!DOCTYPE html>
 
 <head>
+    <style>
+        .button {
+          background-color:blanchedalmond;
+          color: white;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 20px;
+          margin: 4px 2px;
+          font-family: sans-serif;
+          font-style:italic;
+        }
+        </style>
     <title>Social Login</title>
 
 </head>
@@ -10,10 +24,11 @@
 <body>
     {{user}}
 
-    <button><a href="{% provider_login_url "google" %}">Google Login</a></button>
-    <button><a href="{% provider_login_url "facebook" method="js_sdk" %}">Facebook Login</a></button>
-    <a href="home.html">Home page</a>
-    <a href="secret.html">Secret page</a>
+    <button class="button"><a href="{% provider_login_url "google" %}">Google Login</a></button>
+    <button class="button"><a href="{% provider_login_url "facebook" method="js_sdk" %}">Facebook Login</a></button><br><br>
+    <a href="home.html">Home page</a><br><br>
+    <a href="secret.html">Secret page</a><br><br>
+    <a href="dashboard.html">Dashboard</a>
 </body>
 
 </html>
